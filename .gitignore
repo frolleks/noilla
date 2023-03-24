@@ -1,5 +1,5 @@
 __pycache__
-images/*
-!images/.gitkeep
+modules/api/images/*.png
+!modules/api/images/.exists
 revolt/config.py
 discord/config.py
