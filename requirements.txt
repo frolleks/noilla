@@ -1,0 +1,7 @@
+diffusers
+transformers
+accelerate
+fastapi
+uvicorn[standard]
+py-cord
+revolt.py
