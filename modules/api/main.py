@@ -33,6 +33,11 @@ async def txt2img(body: Text2Image):
     # If you're using a CPU, remove or comment the line below
     pipe = pipe.to("cuda")
 
+    def dummy_checker(images, **kwargs):
+        return images, False
+
+    pipe.safety_checker = dummy_checker
+
     prompt = body.prompt
     negative_prompt = body.negative_prompt
 
